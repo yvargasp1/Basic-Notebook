@@ -1,8 +1,11 @@
 
 import 'package:arqui_app_class/src/pages/Home_page.dart';
 import 'package:arqui_app_class/src/pages/alert_page.dart';
+import 'package:arqui_app_class/src/pages/animated_container.dart';
+
 import 'package:arqui_app_class/src/pages/avatar_page.dart';
 import 'package:arqui_app_class/src/pages/card_page.dart';
+import 'package:arqui_app_class/src/pages/input_page.dart';
 import 'package:flutter/cupertino.dart';
 
 Map<String,WidgetBuilder> getApplicationRoutes(){
@@ -11,6 +14,8 @@ Map<String,WidgetBuilder> getApplicationRoutes(){
     'alert' : (BuildContext context) => AlertPage(),
     'card'  : (BuildContext context) => CardPage(),
     'avatar': (BuildContext context) => AvatarPage(),
+    'animatedContainer' : (BuildContext context) => AnimatedContainerPage(),
+    'inputs' : (BuildContext context) => InputPage()
   };
 
 }
